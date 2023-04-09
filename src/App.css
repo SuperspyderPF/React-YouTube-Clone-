@@ -1,0 +1,103 @@
+/* CSS for the navbar */
+.navbar {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #666;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.nav-link.active {
+  color: #1a1a1a;
+}
+
+/* CSS for the video player */
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS for the video list */
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.video-item {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.video-item:hover .video-thumbnail {
+  transform: scale(1.1);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease-out;
+}
+
+.video-details {
+  padding: 0.5rem;
+}
+
+.video-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.video-channel {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* CSS for the main container */
+.container {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 4rem;
+  }
+}
+
+/* CSS for the footer */
+.footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
